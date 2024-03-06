@@ -1,9 +1,9 @@
 <div class="main">
     <div class="upperMain">
         <div class="downloaderInput">
-            <h1> Demo Testing For Project </h1>
+            <h1> Demo Testing For {{ytType == 'videos' ? 'Video' : ytType == 'thumbnails' ? 'Thumbnail' : 'Audio'}} </h1>
             <div class="inputDiv">
-                <input type="url" placeholder="Paster copied url."/>
+                <input type="url" placeholder="Enter URL to download {{ytType == 'videos' ? 'Video' : ytType == 'thumbnails' ? 'Thumbnail' : 'Audio'}}"/>
                 <button class="downloadBtn"> Download </button>
             </div>
             <h5>By using our service you are accepting our <a routerLink="/"> terms of service. </a></h5>
