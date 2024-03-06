@@ -1,12 +1,36 @@
-<div class="main">
-    <div class="upperMain">
-        <div class="downloaderInput">
-            <h1> Demo Testing For {{ytType == 'videos' ? 'Video' : ytType == 'thumbnails' ? 'Thumbnail' : 'Audio'}} </h1>
-            <div class="inputDiv">
-                <input type="url" placeholder="Enter URL to download {{ytType == 'videos' ? 'Video' : ytType == 'thumbnails' ? 'Thumbnail' : 'Audio'}}"/>
-                <button class="downloadBtn"> Download </button>
+<div class="mainDiv">
+    <div class="main">
+        <div class="upperMain">
+            <div class="downloaderInput">
+                <h1> Demo Testing For {{ytType == 'videos' ? 'Video' : ytType == 'thumbnails' ? 'Thumbnail' : 'Audio'}} </h1>
+                <div class="inputDiv">
+                    <input type="url" placeholder="Enter URL to download {{ytType == 'videos' ? 'Video' : ytType == 'thumbnails' ? 'Thumbnail' : 'Audio'}}"/>
+                    <button class="downloadBtn"> Download </button>
+                </div>
+                <h5>By using our service you are accepting our <a routerLink="/"> terms of service. </a></h5>
             </div>
-            <h5>By using our service you are accepting our <a routerLink="/"> terms of service. </a></h5>
         </div>
+    </div>
+
+    <div class="imagesDiv" *ngFor="let img of allThumbnails">
+        <img [src]="img.url" alt="Thumbnail" (click)="downloadImage(img.url)">
+    </div>
+    <div class="info-part">
+        <div class="info-part-title">
+            <h1>Y2Mate: Best Youtube to MP3 Downloader</h1>
+        </div>
+
+        <div class="info-part-description">
+            <p>
+                Y2Mate is the most accessible and free youtube mp3 converter to convert and download youtube videos to MP3 format in the best available quality.
+                Using our online YT to MP3 converter lets you quickly convert and download your favorite videos to audio files without installing any application.
+                It works for all browsers like Firefox, Chrome, Safari, Opera, etc.
+                Y2Mate is the ultimate online tool for converting youtube videos to MP3 files for Android, iPhone, iPad, MAC, and Windows devices.
+                Y2Mate will support converting youtube videos to MP3 audio with a bitrate of up to 320kbps.
+                You can convert unlimited youtube videos without registration.
+                Our online converter tool is free and safe for your downloads.
+            </p>
+        </div>
+
     </div>
 </div>

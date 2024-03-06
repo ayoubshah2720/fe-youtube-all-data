@@ -1,3 +1,7 @@
+.mainDiv{
+background-color: aliceblue;
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -47,4 +51,9 @@ input {
     height: 50px;
     border-radius: 15px;
     border-color: transparent;
+}
+
+.imagesDiv {
+    text-align: center;
+    padding: 20px;
 }
