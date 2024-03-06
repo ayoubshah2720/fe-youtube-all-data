@@ -13,8 +13,20 @@
     </div>
 
     <div class="imagesDiv" *ngFor="let img of allThumbnails">
-        <img [src]="img.url" alt="Thumbnail" (click)="downloadImage(img.url)">
+        <img [src]="img.url" alt="Thumbnail" (click)="downloadData(img.url,'thumbnails')">
     </div>
+
+    <!-- <div class="imagesDiv" *ngFor="let video of allVideos">
+        <img [src]="video.url" alt="Thumbnail" (click)="downloadData(video.url,'videos')">
+    </div> -->
+
+    <div class="imagesDiv" *ngFor="let video of allVideos">
+        <video width="320" height="240" controls (click)="downloadData(video.url,'thumbnails')">
+            <source [src]="video.url" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+    </div>
+
     <div class="info-part">
         <div class="info-part-title">
             <h1>Y2Mate: Best Youtube to MP3 Downloader</h1>
