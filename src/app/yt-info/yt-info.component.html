@@ -16,10 +16,6 @@
         <img [src]="img.url" alt="Thumbnail" (click)="downloadData(img.url,'thumbnails')">
     </div>
 
-    <!-- <div class="imagesDiv" *ngFor="let video of allVideos">
-        <img [src]="video.url" alt="Thumbnail" (click)="downloadData(video.url,'videos')">
-    </div> -->
-
     <div class="imagesDiv" *ngFor="let video of allVideos">
         <video width="320" height="240" controls (click)="downloadData(video.url,'thumbnails')">
             <source [src]="video.url" type="video/mp4">
@@ -31,7 +27,6 @@
         <div class="info-part-title">
             <h1>Y2Mate: Best Youtube to MP3 Downloader</h1>
         </div>
-
         <div class="info-part-description">
             <p>
                 Y2Mate is the most accessible and free youtube mp3 converter to convert and download youtube videos to MP3 format in the best available quality.
@@ -43,6 +38,68 @@
                 Our online converter tool is free and safe for your downloads.
             </p>
         </div>
+    </div>
 
+    <div class="how-why-div">
+        <div class="leftHow">
+            <h4> How to Download Youtube videos with Y2Mate? </h4>
+            <ul>
+                <li><ol>Open Youtube and copy the video URL you want to download.</ol></li>
+                <li><ol>Open Youtube and copy the video URL you want to download.</ol></li>
+                <li><ol>Open Youtube and copy the video URL you want to download.</ol></li>
+                <li><ol>Open Youtube and copy the video URL you want to download.</ol></li>
+                <li><ol>Open Youtube and copy the video URL you want to download.</ol></li>
+            </ul>
+        </div>
+        <div class="rightHow">
+            <h4> How to Download Youtube videos with Y2Mate? </h4>
+            <ul>
+                <li><ol>Open Youtube and copy the video URL you want to download.</ol></li>
+                <li><ol>Open Youtube and copy the video URL you want to download.</ol></li>
+                <li><ol>Open Youtube and copy the video URL you want to download.</ol></li>
+                <li><ol>Open Youtube and copy the video URL you want to download.</ol></li>
+                <li><ol>Open Youtube and copy the video URL you want to download.</ol></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bottom-part">
+        <div class="upperView">
+            <div class="conversions">
+                <h1>ICON</h1>
+                <h4>Unlimited Conversions</h4>
+                <p>We offers unlimited conversions of youtube videos to mp3 and mp4.</p>
+            </div>
+            <div class="conversions">
+                <h1>ICON</h1>
+                <h4>Auto Fetch from Youtube</h4>
+                <p>We automatically fetch data from Youtube, you just have to copy and paste the youtube URL.</p>
+            </div>
+            <div class="conversions">
+                <h1>ICON</h1>
+                <h4>No Registration Required</h4>
+                <p>You don't need to register to convert and download youtube videos to mp4 and mp3 format.</p>
+            </div>
+        </div>
+
+        <div class="upperView">
+            <div class="conversions">
+                <h1>ICON</h1>
+                <h4>Faster Video Conversion</h4>
+                <p>We use the latest technologies for encoding system, so you don't have to wait much for the conversion.</p>
+            </div>
+            <div class="conversions">
+                <h1>ICON</h1>
+                <h4>Browser Compatibility</h4>
+                <p>Our web app is fully compatible with the latest browsers like Chrome, Firefox, Safari, Microsoft Edge, etc.</p>
+            </div>
+            <div class="conversions">
+                <h1>ICON</h1>
+                <h4>Completely Mobile friendly</h4>
+                <p>Our site can be used on any device to download your favorite youtube videos to mp4 and mp3.</p>
+            </div>
+        </div>
     </div>
 </div>
+
+<app-footer></app-footer>

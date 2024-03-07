@@ -9,6 +9,7 @@ import { YtInfoComponent } from './yt-info/yt-info.component';
 import { YtMp3Component } from './yt-mp3/yt-mp3.component';
 import { YtAllQualitiesComponent } from './yt-all-qualities/yt-all-qualities.component';
 import { YtThumbnailComponent } from './yt-thumbnail/yt-thumbnail.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { YtThumbnailComponent } from './yt-thumbnail/yt-thumbnail.component';
     YtInfoComponent,
     YtMp3Component,
     YtAllQualitiesComponent,
-    YtThumbnailComponent
+    YtThumbnailComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
