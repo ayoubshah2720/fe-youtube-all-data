@@ -58,6 +58,16 @@ input {
     padding: 20px;
 }
 
+.info-part-title { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+        color: #dd8f8f;
+    }
+}
+
 .how-why-div {
     width: 100%;
     display: flex;
